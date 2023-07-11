@@ -57,7 +57,7 @@ fun SendBroadcastDataScreen() {
         Spacer(modifier = Modifier.height(20.dp))
         Button(onClick = {
             val intent = Intent("event").apply {
-                putExtra("data", "Data from Broadcast!")
+                putExtra("data", "Data from Broadcast !")
             }
             context.sendBroadcast(intent)
         }
